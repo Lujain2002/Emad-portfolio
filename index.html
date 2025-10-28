@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dr. Emad — Legal Scholar & Lecturer</title>
+  <meta name="description" content="Portfolio of Dr. Emad — Ph.D. in Law. Academic profile, publications, teaching and contact.">
+
+  <!-- Boxicons library -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg:#f7f9fb;
+      --card:#ffffff;
+      --primary:#0b5cff;
+      --muted:#6b7280;
+      --accent:#0f1724;
+      --radius:12px;
+      --max-width:980px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--accent); }
+
+    .container { max-width:var(--max-width); margin:36px auto; padding:24px; }
+
+    header.site-head { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .brand__initial { width:56px; height:56px; border-radius:10px; background:linear-gradient(135deg,var(--primary),#6b8cff); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:20px; }
+    .brand__details h1 { margin:0; font-size:20px; }
+    .brand__details p { margin:0; color:var(--muted); font-size:13px; }
+
+    nav.header-nav a { margin-left:14px; color:var(--muted); text-decoration:none; font-weight:600; }
+
+    .hero { display:grid; grid-template-columns:1fr 320px; gap:24px; margin-top:26px; align-items:start; }
+    .card { background:var(--card); border-radius:var(--radius); box-shadow:0 6px 20px rgba(8,15,30,0.06); padding:20px; }
+
+    .profile-pic { width:100%; max-width:80px; border-radius:20%; margin-bottom:16px; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
+
+    .about__title { margin:0 0 8px 0; font-size:18px; }
+    .about__text { margin:0; color:var(--muted); line-height:1.6; }
+
+    .info-list { display:flex; flex-direction:column; gap:12px; margin-top:12px; }
+    .info-item { display:flex; gap:12px; align-items:center; }
+    .info-item i { font-size:18px; color:var(--primary); }
+    .info-item a { color:var(--accent); text-decoration:none; }
+
+    .sidebar .contact-cta { display:flex; flex-direction:column; gap:10px; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:10px; background:var(--primary); color:white; text-decoration:none; font-weight:600; }
+    .btn.secondary { background:transparent; border:1px solid #e6e9ff; color:var(--primary); }
+
+    footer.site-foot { margin-top:30px; text-align:center; color:var(--muted); font-size:13px; }
+
+    .social-icons { display:flex; justify-content:center; gap:20px; margin-top:10px; }
+    .social-icons a { color:var(--primary); font-size:22px; transition:0.3s; }
+    .social-icons a:hover { color:#002b9f; }
+
+    @media (max-width:880px) {
+      .hero { grid-template-columns:1fr; }
+      nav.header-nav a { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header class="site-head">
+      <div class="brand">
+        <!-- <div class="brand__initial">E</div> -->
+        <div class="brand__details">
+          <h1>Dr. Emad Alibraheem</h1>
+          <p>Ph.D. in Law — Lecturer & Legal Researcher</p>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card">
+          <img src="./img/profile.jpg" alt="Dr. Emad Photo" class="profile-pic">
+          <h2 class="about__title" id="about">About</h2>
+          <p class="about__text">
+            Dr. Emad holds a Ph.D. in Law and teaches at several universities. His expertise covers constitutional law, human rights, and comparative legal systems. He combines academic research with practical legal consulting and guest lectures.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item"><i class='bx bx-briefcase'></i><div><strong>Position</strong><div class="meta">Lecturer & Legal Consultant</div></div></div>
+            <div class="info-item"><i class='bx bx-book'></i><div><strong>Specialties</strong><div class="meta">Constitutional Law · Human Rights · Legal Research</div></div></div>
+            <div class="info-item"><i class='bx bx-globe'></i><div><strong>Affiliations</strong><div class="meta">Teaches at multiple universities</div></div></div>
+          </div>
+        </div>
+
+        <aside class="card sidebar" id="contact">
+          <h3>Contact</h3>
+          <div class="contact-cta">
+            <div class="info-item"><i class='bx bx-envelope'></i><a href="mailto:emad@example.com">emad@example.com</a></div>
+            <div class="info-item"><i class='bx bx-phone'></i><a href="tel:+970599123456">+972  56 898 4200</a></div>
+            <div class="info-item"><i class='bx bxl-facebook'></i><a href="https://www.facebook.com/emadalibraheem/?locale=ar_AR" target="_blank">Facebook</a></div>
+            <div class="info-item"><i class='bx bxl-whatsapp'></i><a href="https://wa.me/qr/TWFEKXLN3DJYO1" target="_blank">WhatsApp</a></div>
+            <div class="info-item"><i class='bx bxl-telegram'></i><a href="http://t.me/alibraheem2025" target="_blank">Telegram</a></div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="site-foot">
+        <p>© 2025 Dr. Emad — All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/emadalibraheem/?locale=ar_AR" target="_blank"><i class='bx bxl-facebook'></i></a>
+          <a href="https://wa.me/qr/TWFEKXLN3DJYO1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+          <a href="http://t.me/alibraheem2025" target="_blank"><i class='bx bxl-telegram'></i></a>
+        </div>
+      </footer>
+    </main>
+
+  </div>
+</body>
+</html>
